@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "ApiAulaEntra21.Controllers.ProdutoController",
+    "Method": "Get",
+    "RelativePath": "api/Produto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
