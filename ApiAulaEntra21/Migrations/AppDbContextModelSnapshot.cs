@@ -44,7 +44,7 @@ namespace ApiAulaEntra21.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cliente");
+                    b.ToTable("Cliente", (string)null);
                 });
 
             modelBuilder.Entity("ApiAulaEntra21.Models.Loja", b =>
@@ -61,7 +61,7 @@ namespace ApiAulaEntra21.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Loja");
+                    b.ToTable("Loja", (string)null);
                 });
 
             modelBuilder.Entity("ApiAulaEntra21.Models.Produto", b =>
@@ -92,7 +92,7 @@ namespace ApiAulaEntra21.Migrations
 
                     b.HasIndex("LojaId");
 
-                    b.ToTable("Produto");
+                    b.ToTable("Produto", (string)null);
                 });
 
             modelBuilder.Entity("ApiAulaEntra21.Models.Usuario", b =>
@@ -120,7 +120,7 @@ namespace ApiAulaEntra21.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuario");
+                    b.ToTable("Usuario", (string)null);
                 });
 
             modelBuilder.Entity("ApiAulaEntra21.Models.Produto", b =>

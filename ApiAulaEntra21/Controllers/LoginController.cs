@@ -20,6 +20,7 @@ namespace ApiAulaEntra21.Controllers
             _context = context;
             _configuration = configuration;
         }
+
         [HttpPost]
         public IActionResult Login(LoginDTO dto)
         {

@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ApiAulaEntra21.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using ApiAulaEntra21.Models.DTO;
 
 namespace ApiAulaEntra21.Controllers
 {
@@ -32,9 +34,70 @@ namespace ApiAulaEntra21.Controllers
             }
             return Ok(produto);
         }
+        
+        [HttpGet("loja/{lojaId}")]
+        public IActionResult GetByLojaId([FromRoute] int lojaId)
+        {
+            //var produtos = _context.Produto
+            //    .Where(p => p.LojaId == lojaId)
+            //    .Include(p => p.Loja)
+            //    .ToList();
+
+            var produtos = from produto in _context.Produto
+                           join loja in _context.Loja on produto.LojaId equals loja.Id
+                           where produto.LojaId == lojaId
+                           select new
+                           {
+                               produto.Id,
+                               produto.Nome,
+                               produto.Marca,
+                               produto.QuantidadeEstoque,
+                               LojaId = loja.Id,
+                               NomeLoja = loja.Nome
+                           };
+
+            if (produtos is null)
+            {
+                return NotFound("Produtos não encontrado.");
+            }
+
+            return Ok(produtos);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put([FromRoute] int id, [FromBody] ProdutoDto updatedProduto)
+        {
+            if (updatedProduto == null)
+            {
+                return BadRequest("Produto não pode ser nulo.");
+            }
+
+            if (string.IsNullOrEmpty(updatedProduto.Nome))
+            {
+                return BadRequest("O nome do produto é obrigatório.");
+            }
+
+            var produto = _context.Produto.FirstOrDefault(p => p.Id == id);
+
+            if (produto is null)
+            {
+                return NotFound("Produto não encontrado.");
+            }
+
+            produto.Nome = updatedProduto.Nome;
+            produto.Marca = updatedProduto.Marca;
+            produto.QuantidadeEstoque = updatedProduto.QuantidadeEstoque;
+            produto.LojaId = updatedProduto.LojaId;
+
+            _context.Produto.Update(produto);
+            _context.SaveChanges();
+
+            return Ok(produto);
+        }
+
 
         [HttpPost]
-        public IActionResult Post([FromBody] Produto newProduto)
+        public IActionResult Post([FromBody] ProdutoDto newProduto)
         {
             if(newProduto == null)
             {
@@ -46,10 +109,18 @@ namespace ApiAulaEntra21.Controllers
                 return BadRequest("O nome do produto é obrigatório.");
             }
 
-            _context.Produto.Add(newProduto);
+            var produto = new Produto()
+            {
+                LojaId = newProduto.LojaId,
+                Nome = newProduto.Nome,
+                Marca = newProduto.Marca,
+                QuantidadeEstoque = newProduto.QuantidadeEstoque
+            };
+
+            _context.Produto.Add(produto);
             _context.SaveChanges();
 
-            return Created("/produto", newProduto);
+            return Created("/produto", produto);
         }
 
         [HttpDelete("{id}")]
