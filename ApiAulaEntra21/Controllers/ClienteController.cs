@@ -1,5 +1,6 @@
 ﻿using ApiAulaEntra21.Data;
 using ApiAulaEntra21.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace ApiAulaEntra21.Controllers
 {
     [ApiController]
     [Route("/api/[controller]")]
+    [Authorize]
     public class ClienteController : ControllerBase
     {
         private readonly AppDbContext _context;

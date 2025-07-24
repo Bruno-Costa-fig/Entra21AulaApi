@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|d:\\senai\\entra21\\apilojaentra21\\apiaulaentra21\\apiaulaentra21\\apiaulaentra21\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{339D1BDA-EC3C-46B2-8E0C-B2CABE8FBE55}|ApiAulaEntra21\\ApiAulaEntra21.csproj|solutionrelative:apiaulaentra21\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -207,27 +203,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "ApiAulaEntra21\\Controllers\\ProdutoController.cs",
-              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "ApiAulaEntra21\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBoAAAAIAAAAAAAAAA==",
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "ApiAulaEntra21\\Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "ApiAulaEntra21\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:49:54.917Z",
+              "WhenOpened": "2025-07-24T01:35:29.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Program.cs",
-              "RelativeDocumentMoniker": "ApiAulaEntra21\\Program.cs",
-              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Program.cs",
-              "RelativeToolTip": "ApiAulaEntra21\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABZAAAAAAAAAA==",
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "ApiAulaEntra21\\Controllers\\ProdutoController.cs",
+              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "ApiAulaEntra21\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:35:24.232Z",
+              "WhenOpened": "2025-07-24T01:35:16.27Z",
               "EditorCaption": ""
             },
             {
@@ -238,48 +234,35 @@
               "RelativeDocumentMoniker": "ApiAulaEntra21\\appsettings.json",
               "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\appsettings.json",
               "RelativeToolTip": "ApiAulaEntra21\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T23:33:42.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ApiAulaEntra21\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "ApiAulaEntra21\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:20:53.757Z",
+              "WhenOpened": "2025-07-24T01:29:14.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "ApiAulaEntra21\\Models\\Cliente.cs",
-              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Models\\Cliente.cs",
-              "RelativeToolTip": "ApiAulaEntra21\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "ApiAulaEntra21\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "ApiAulaEntra21\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:15:30.236Z",
+              "WhenOpened": "2025-07-24T01:09:57.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "ApiAulaEntra21\\Models\\Produto.cs",
-              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Models\\Produto.cs",
-              "RelativeToolTip": "ApiAulaEntra21\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ApiAulaEntra21\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\SENAI\\entra21\\ApiLojaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\ApiAulaEntra21\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ApiAulaEntra21\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAwwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T23:10:06.654Z",
+              "WhenOpened": "2025-07-24T01:06:57.208Z",
               "EditorCaption": ""
             }
           ]
