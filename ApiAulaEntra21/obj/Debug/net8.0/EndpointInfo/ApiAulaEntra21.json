@@ -90,6 +90,89 @@
         }
       }
     },
+    "/api/Loja": {
+      "get": {
+        "tags": [
+          "Loja"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Loja"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Loja/{id}": {
+      "put": {
+        "tags": [
+          "Loja"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Loja"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Produto": {
       "get": {
         "tags": [
@@ -109,17 +192,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Produto"
+                "$ref": "#/components/schemas/ProdutoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Produto"
+                "$ref": "#/components/schemas/ProdutoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Produto"
+                "$ref": "#/components/schemas/ProdutoDto"
               }
             }
           }
@@ -174,6 +257,60 @@
           }
         }
       }
+    },
+    "/api/Produto/loja/{lojaId}": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "lojaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -202,7 +339,7 @@
         },
         "additionalProperties": false
       },
-      "Produto": {
+      "Loja": {
         "type": "object",
         "properties": {
           "id": {
@@ -210,18 +347,53 @@
             "format": "int32"
           },
           "nome": {
-            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
             "type": "string",
             "nullable": true
           },
           "marca": {
-            "maxLength": 200,
             "type": "string",
             "nullable": true
           },
           "quantidadeEstoque": {
             "type": "integer",
             "format": "int32"
+          },
+          "lojaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioCreateDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

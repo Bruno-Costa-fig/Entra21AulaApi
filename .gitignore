@@ -1,0 +1,31 @@
+# Build results
+/bin/
+/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+.vscode/
+
+# NuGet packages
+*.nupkg
+/packages
+*.snupkg
+
+# Logs
+*.log
+
+# IIS Express
+*.vspscc
+*.vssscc
+*.dbmdl
+*.pdb
+
+# Others
+*.DS_Store
+*.env

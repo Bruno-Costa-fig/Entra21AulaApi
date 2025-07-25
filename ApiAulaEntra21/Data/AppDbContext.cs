@@ -11,5 +11,7 @@ namespace ApiAulaEntra21.Data
 
         public DbSet<Produto> Produto { get; set; }
         public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Loja> Loja { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }

@@ -171,3 +171,5 @@ D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\bin
 D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\obj\Debug\net8.0\ApiAulaEntra21.sourcelink.json
+D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\bin\Debug\net8.0\BCrypt.Net-Core.dll
+D:\SENAI\entra21\ApiLojaEntra21\ApiAulaEntra21\ApiAulaEntra21\ApiAulaEntra21\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

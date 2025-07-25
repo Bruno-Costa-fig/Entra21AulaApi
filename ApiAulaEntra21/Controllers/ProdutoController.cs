@@ -1,6 +1,8 @@
 ﻿using ApiAulaEntra21.Data;
 using Microsoft.AspNetCore.Mvc;
 using ApiAulaEntra21.Models;
+using ApiAulaEntra21.Models.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiAulaEntra21.Controllers
 {
@@ -31,8 +33,38 @@ namespace ApiAulaEntra21.Controllers
             return Ok(produto);
         }
 
+        [HttpGet("loja/{lojaId}")]
+        public IActionResult GetPorLojaId([FromRoute] int lojaId)
+        {
+            //return Ok(_context.Produto
+            //    .Where(x => x.LojaId == lojaId)
+            //    .Include(p => p.Loja)
+            //    .Select(p => new
+            //    {
+            //        NomeProduto = p.Nome,
+            //        Quantidade = p.QuantidadeEstoque,
+            //        Marca = p.Marca,
+            //        NomeLoja = p.Loja.Nome
+            //    })
+            //    .ToList());
+
+            var produtos = from produto in _context.Produto
+                           join loja in _context.Loja
+                           on produto.LojaId equals loja.Id
+                           where produto.LojaId == lojaId
+                           select new
+                           {
+                               NomeProduto = produto.Nome,
+                               Quantidade = produto.QuantidadeEstoque,
+                               Marca = produto.Marca,
+                               NomeLoja = loja.Nome
+                           };
+
+            return Ok(produtos);
+        }
+
         [HttpPost]
-        public IActionResult Post([FromBody] Produto newProduto)
+        public IActionResult Post([FromBody] ProdutoDto newProduto)
         {
             if(newProduto == null)
             {
@@ -44,10 +76,18 @@ namespace ApiAulaEntra21.Controllers
                 return BadRequest("O nome do produto é obrigatório.");
             }
 
-            _context.Produto.Add(newProduto);
+            var produto = new Produto()
+            {
+                Nome = newProduto.Nome,
+                Marca = newProduto.Marca,
+                QuantidadeEstoque = newProduto.QuantidadeEstoque,
+                LojaId = newProduto.LojaId
+            };
+
+            _context.Produto.Add(produto);
             _context.SaveChanges();
 
-            return Created("/produto", newProduto);
+            return Created("/produto", produto);
         }
 
         [HttpDelete("{id}")]

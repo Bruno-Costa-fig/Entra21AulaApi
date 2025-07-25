@@ -16,5 +16,11 @@ namespace ApiAulaEntra21.Models
         [MaxLength(200)]
         public string Marca { get; set; }
         public int QuantidadeEstoque  { get; set; }
+
+        public int? LojaId { get; set; }
+
+        [ForeignKey("LojaId")]
+        // propriedade de navegação
+        public virtual Loja Loja { get; set; }
     }
 }
